@@ -166,132 +166,72 @@
         <div class="popup" id="popup">
             <div class="popup__content">
 
-                <div class="  u-margin-bottom-medium  ">
+                <div class="form__groupp">
                     <h1 class="heading-login">Register yourself here</h1>
+
+                    <h3 class="l-1"><em>Login Information</em></h3>
+
+                    <input id="login-here" type="text" class="form__inputt" placeholder="Full Name" id="name" required>
+                    <label for="name" class="form__labell">User Name</label>
+
+                    <input type="email" class="form__inputt" placeholder="Email address" id="email" required>
+                    <label for="email" class="form__labell">Email address</label>
+
+                    <input type="password" class="form__inputt" placeholder="Your Password" id="password" required>
+                    <label for="password" class="form__labell">Password</label>
+
+                    <button href="#go-to-main" class=" btn  btn__registrationbtn btn--login">Login &rarr;
+                    </button>
                 </div>
 
-                <h3 class="l-1"><em>Login Information</em></h3>
+                <div class="form__groupp">
+                    <h3 class="l-1 l-2 "><em>Personal Information</em></h3>
+                    <input id="login-here" type="text" class="form__inputt" placeholder="Full Name" id="name" required>
+                    <label for="name" class="form__labell">User Name</label>
 
-                <table>
-                    <tbody>
-                        <div class="form__groupp">
-                            <input id="login-here" type="text" class="form__inputt" placeholder="Full Name" id="name"
-                                required>
-                            <label for="name" class="form__labell">User Name</label>
-                        </div>
-                        <div class="form__groupp">
-                            <input type="email" class="form__inputt" placeholder="Email address" id="email" required>
-                            <label for="email" class="form__labell">Email address</label>
-                        </div>
-                        <div class="form__groupp">
-                            <input type="password" class="form__inputt" placeholder="Your Password" id="password"
-                                required>
-                            <label for="password" class="form__labell">Password</label>
-                        </div>
+                    <div class=" form__group form__radio-group">
+                        <input type="radio" class="form__radio-input" id="small" name="size">
+                        <label for="small" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                            Small tour group</label>
 
-                        <div class="form__groupp">
-                            <button href="#go-to-main" class=" btn  btn__registrationbtn btn--login">Login &rarr;
-                            </button>
-                        </div>
+                        <input type="radio" class="form__radio-input" id="large" name="size">
+                        <label for="large" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                            Large tour group</label>
+                    </div>
 
-                    </tbody>
-                </table>
+                    <input id="login-here" type="type" class="form__inputt" placeholder="Current City" id="name"
+                        required>
+                    <label for="name" class="form__labell">Current City</label>
 
+                    <input id="login-here" type="type" class="form__inputt" placeholder="Complete Address" id="name"
+                        required>
+                    <label for="name" class="form__labell">Complete Address</label>
+                </div>
 
 
-                <fieldset>
-
+                <div class="form__groupp">
                     <h3 class="l-1 l-2 "><em>Personal Information</em></h3>
 
-                    <table>
-                        <tbody>
 
+                    <input id="login-here" type="type" class="form__inputt"
+                        placeholder="Your Order will be Delivered on that Address" id="name" required>
+                    <label for="name" class="form__labell">Address</label>
 
-                            <div class="form__groupp">
-                                <input id="login-here" type="text" class="form__inputt" placeholder="Full Name"
-                                    id="name" required>
-                                <label for="name" class="form__labell">User Name</label>
-                            </div>
+                    <input id="login-here" type="type" class="form__inputt" placeholder="City" id="name" required>
+                    <label for="name" class="form__labell">City</label>
 
-                            <tr>
-                                <td><label for="">Gander:</label></td>
-                                <td> <label>Male</label>
-                                    <input name="1" type="radio">
-
-
-                                    <label>Female</label>
-                                    <input name="1" type="radio">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label>City</label></td>
-                                <td><input required type="text"></td>
-                            </tr>
-                            <tr>
-                                <td> <label> Complete Address </label></td>
-                                <td> <textarea required cols="20" rows="5"
-                                        placeholder="Your Current Address"></textarea>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-                </fieldset>
-                <fieldset>
-                    <table>
-                        <tbody>
-
-                            <legend>
-                                <h3><em>Shipping Information</em></h3>
-                            </legend>
-                            <tr>
-
-                                <td><label for="">Address</label></td>
-                                <td> <textarea required cols="20" rows="5"
-                                        placeholder="Your Order will be Delivered on that Address."></textarea></td>
-                            </tr>
-                            <tr>
-                                <td> <label for="">City</label></td>
-                                <td> <input type="text"></td>
-                            </tr>
-                            <tr>
-                                <td> <label for="">Postal Code</label></td>
-                                <td> <input type="text"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </fieldset>
-                <br>
-                <input value="Submit" type="submit">
-                <br>
-                </fieldset>
-                <!--
-                <div class="form__group">
-                    <input id="login-here" type="text" class="form__input" placeholder="Full Name" id="name"
+                    <input id="login-here" type="type" class="form__inputt" placeholder="Postal Code" id="name"
                         required>
-                    <label for="name" class="form__label">User Name</label>
-                </div>
-                <div class="form__group">
-                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                    <label for="email" class="form__label">Email address</label>
-                </div>
-                <div class="form__group">
-                    <input type="password" class="form__input" placeholder="Your Password" id="password"
-                        required>
-                    <label for="password" class="form__label">Password</label>
+                    <label for="name" class="form__labell">Postal Code</label>
                 </div>
 
-                <div class="form__group">
-                    <button href="go-to-main" class="btn btn--login">Login &rarr; </button>
-                </div>
-                -->
-
-
-                <a href="#" class="btn btn--login">Book now</a>
-
+                <a href="#go-to-main" class=" btn  btn__registrationbtn btn--login">Submit &rarr;
+                </a>
             </div>
         </div>
+    </div>
 
 
 
@@ -299,7 +239,7 @@
 
 
 
-        </section>
+    </section>
 
 
 
@@ -307,7 +247,7 @@
 
 
 
-        <!-- <a href="./Contact.html">Contact Me</a><br><br>
+    <!-- <a href="./Contact.html">Contact Me</a><br><br>
     <a href="./Login.html"> Login here </a> <br> <br>
     <a href="./Registration.html">Registration</a> <br><br>
     <a href="./Product.html"> Product Page</a> -->
