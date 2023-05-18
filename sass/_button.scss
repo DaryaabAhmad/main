@@ -49,14 +49,14 @@
     // }
 
     &--login {
-        
-        background-color: rgba($color-primary-dark, 0.6) ;
+
+        background-color: rgba($color-primary-dark, 0.6);
         color: $color-white;
 
         &::after {
             background-color: rgba($color-primary-dark, 0.9);
         }
-        
+
     }
 
     &::after {
@@ -81,9 +81,22 @@
         animation-fill-mode: backwards;
     }
 
-    &__registrationbtn{
+    &__registrationbtn {
         padding: .5rem 2rem;
         font-size: 1.1rem;
         font-weight: 500;
+    }
+
+    &__icon {
+
+        &,
+        &:link,
+        &:visited {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            align-content: center;
+            width: 25rem;
+        }
     }
 }

@@ -27,6 +27,8 @@ body {
     color: #000;
     text-align: left;
     padding: 2.5rem 0; }
+  .l-2 {
+    padding: 0%; }
   .l__copyright {
     padding-top: 2rem;
     width: 80%;
@@ -380,16 +382,16 @@ body {
   color: #ffffff9d; }
 
 .popup {
-  height: 100vh;
+  height: 210%;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-image: linear-gradient(rgba(231, 100, 7, 0.5), rgba(243, 160, 3, 0.5)), url(/img/shopping-2.jpeg);
   grid-column: full-start / col-end 6;
   background-size: cover;
   background-position: center;
@@ -398,17 +400,28 @@ body {
   grid-template-columns: minmax(min-content, max-content);
   grid-row-gap: 1.5rem;
   justify-content: center; }
+  .popup__1 {
+    position: fixed;
+    width: 100%; }
   .popup__content {
     width: 160%;
     padding: 0 5rem;
-    background-image: linear-gradient(rgba(231, 100, 7, 0.5), rgba(243, 160, 3, 0.5)), url(/img/shopping-2.jpeg);
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
     display: table;
     overflow: hidden;
     opacity: 0;
     transform: translate(-36%, 36%) scale(0.25);
     transition: all .5s .2s; }
+    .popup__content-1 {
+      width: 200%;
+      padding: 0 5rem;
+      display: table;
+      overflow: hidden;
+      opacity: 1;
+      transform: translate(1%, 1%) scale(1);
+      transition: all .5s .2s; }
+      .popup__content-1:target {
+        opacity: 1;
+        transform: translate(-20%, 10%) scale(1.1); }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
