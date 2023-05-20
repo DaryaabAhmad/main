@@ -28,4 +28,20 @@
     }
 }
 
+.page{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+
+    &__1{
+        background-color: grey;
+    }
+}
+
 
