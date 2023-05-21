@@ -15,18 +15,21 @@
 
     // background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93));
     // background-color: rgba($color-black, 1);
-    background-image: linear-gradient(rgba($color-primary-gradiant-1, .5), rgba($color-primary-gradiant-2, .5)), url(/img/shopping-2.jpeg);
+    background-image: linear-gradient(rgba($color-primary-gradiant-1, .5), rgba($color-primary-gradiant-2, .5)), url(/img/login.jpg);
 
     grid-column: full-start / col-end 6;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: inherit;
     // padding: 8rem;
-    display: grid;
+    display: flex;
     grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
     grid-template-columns: minmax(min-content, max-content);
-    grid-row-gap: 1.5rem;
-    justify-content: center;
-
+    // justify-content: center;
+    grid-row-gap: 1rem;
+    justify-content: space-between;
+    align-items: start;
+    justify-items: start;
+    align-content: space-evenly;
 
     &__1 {
         position: fixed;
