@@ -6,17 +6,56 @@
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
-    html {
-      font-size: 50%; } }
+  font-size: 62.5%;
+  /*
+    @include respond(tab-land) {
+        font-size: 56.25%; // 1rem=9px, // 9px\16px=56.25%
+    }
+    @include respond(tab-port) {
+        // width < 900?
+        font-size: 50%;
+        //1 rem = 8px, 8/16 = 50%
+    }
+
+    // @include respond(phone) {
+
+    //     font-size: 30%;
+    //1 rem = 4.8px, 4.8/16 = 30%
+    // }
+
+    @include respond(big-desktop) {
+        font-size: 75%;
+        //1rem = 12, 12/16px = 75%
+    }*/ }
 
 body {
-  font-family: "Nunito", sans-serif;
-  font-weight: 300;
-  line-height: 1.6; }
+  box-sizing: border-box;
+  padding: 0rem;
+  /*
+    @include respond(tab-port) {
+        padding: 0;
+    }*/ }
 
+/*
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+    // background-color: $color-black;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    // color: $color-grey-dark-2;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+*/
 .l {
   font-size: 1.25rem;
   color: #ff1100;
@@ -309,6 +348,7 @@ body {
 
 .form__group:not(:last-child) {
   margin-bottom: 0;
+  margin-left: 3rem;
   transition: all .2s; }
 
 .form__input {
@@ -597,3 +637,18 @@ body {
   margin: 0 auto; }
   .page-view:not(:last-shild) {
     margin-bottom: 1px; }
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
