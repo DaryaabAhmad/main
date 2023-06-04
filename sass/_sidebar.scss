@@ -43,7 +43,6 @@
         background-color: var(--color-primary-light);
     }
 
-
     &__link:link,
     &__link:visited {
         color: $color-black;
@@ -64,7 +63,7 @@
         fill: currentColor;
     }
 
-   
+
 }
 
 
@@ -75,6 +74,7 @@
     // background-repeat: no-repeat;
     height: 50rem;
     // margin-top: 10rem;
+    
 }
 
 .sidebar {
@@ -86,4 +86,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    // @include respond (big-desktop) {
+    // }
 }

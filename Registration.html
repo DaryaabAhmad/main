@@ -18,10 +18,58 @@
 <body>
 
     <div >
+        <div class="header">
+            <h1 id="go-to-main" class="heading">MaNgo
+                Marketplace
+            </h1>
+            <div class="heading__secondary">
+                <img class="logo" src="./img/logo.jpg" alt="">
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search Engine">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                    <!-- <p class="logo__text">Welcome to our cash and carry. You can <strong>Buy as well as order</strong> each & -->
+                    <!-- evertything from here.</p> -->
+                </form>
+
+                <!-- side nav -->
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">37+</span>
+                    </div>
+
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-cart"></use>
+                        </svg>
+                        <span class="user-nav__notification">5+</span>
+                    </div>
+
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Ahmad</span>
+                    </div>
+
+
+
+
+                </nav>
+                <!-- <input class="heading__search" type="text" placeholder="search" name="" id=""> -->
+            </div>
+        </div>
         <section class="section-login">
+            
             <div class="page-view">
                 <div class="home-page">
                     <div class="home-page__form">
+                        
                         <form class="form">
                             <!-- <div class="  u-margin-bottom-medium  ">
                                 <h1 class="heading-login">Register yourself here</h1>
@@ -44,8 +92,8 @@
                                     required>
                                 <label for="password" class="form__labell">Password</label>
 
-                                <button href="#go-to-main" class=" btn  btn__registrationbtn btn--login">Login &rarr;
-                                </button>
+                                <!-- <button href="#go-to-main" class=" btn  btn__registrationbtn btn--login">Login &rarr;
+                                </button> -->
                             </div>
                             <div class="form__groupp">
                                 <h3 class="l-1 l-2 "><em>Personal Information</em></h3>
@@ -91,6 +139,9 @@
                                     id="name" required>
                                 <label for="name" class="form__labell">Postal Code</label>
                             </div>
+                            <div class="l-1">
+                                <strong> Already have an Account? <a href="/index.html">Login</a>  </strong>
+                            </div>
                             <button href="#go-to-main" class=" btn  btn--login">Submit &rarr;
                             </button>
                             <li>
@@ -110,6 +161,13 @@
 
             </div>
         </section>
+        <footer class="footer">
+            <div class="l">
+                <div class="l-copyright  ">
+                    .Copyright &copy; 2023 by <a href="#" class="l__link">Ahmad</a> All Rights are reserverd.
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 

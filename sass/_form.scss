@@ -1,10 +1,12 @@
 .form {
+    background-color: rgba(255, 255, 255, 0.781);
+    padding: 3rem;
+    transition: all .2s;
+
     &__group:not(:last-child) {
         margin-bottom: 0;
         margin-left: 3rem;
-        transition: all .2s;
-
-
+        // transition: all .2s;
 
         // &:hover {
         //     transform: skewY(0deg) skewX(0deg) scale(1.01);
@@ -78,9 +80,7 @@
         display: inline-block;
         display: flex;
         justify-content: space-between;
-
-
-        
+ 
     }
 
     &__radio-input {
@@ -93,7 +93,7 @@
         position: relative;
         // padding-left: 2.5rem;
         padding: 0 2.5rem;
-        color: white;
+        color: $color-black;
         margin-bottom: 1rem;
 
         // display: flex;
@@ -109,8 +109,7 @@
         position: absolute;
         left: 0;
         // top: -.4rem;
-        
-
+ 
         &::after {
             content: "";
             display: block;
@@ -169,7 +168,7 @@
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
             border-bottom: 2px solid $color-grey-light-1;
             transform: skewY(0deg) skewX(0deg) scale(1.02);
-            text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
+            text-shadow: 0.5rem 1rem 2rem rgb(255, 255, 255);
 
         }
 
@@ -185,9 +184,7 @@
             text-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.2);
 
         }
-
     }
-
 
     &__labell {
 
@@ -198,7 +195,7 @@
         margin-bottom: .5rem;
         display: block;
         transition: all .3s;
-        color: $color-search;
+        color: $color-black;
         height: 1rem;
     }
 
@@ -206,7 +203,7 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);
-        color: $color-search;
+        color: $color-white;
 
 
     }

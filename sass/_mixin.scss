@@ -16,11 +16,11 @@
 
 // MEDIA QUERY MANAGER
 /*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
+0 - 600px:      Phone   ----------------------------        0-425
+600 - 900px:    Tablet  ----------------------------      425-768
+900 - 1200px:   desktop ----------------------------      768-1024
 [1200 - 1800] is where our normal styles apply
-1800px + :      Big desktop
+1800px + :      Big desktop ------------------------     1440+
 $breakpoint arguement choices:
 - phone
 - tab-port
@@ -33,30 +33,32 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @mixin respond($breakpoint) {
     @if $breakpoint ==phone {
 
-        // @media only screen and (max-width: 37.5em) {
-        @media (max-width: 600px) {
+        @media only screen and (max-width: 26.5625em) {
+            // @media (max-width: 425px) {
             @content
         }
 
         ; //600px 
         // 16px=1em so 600/16=37.5em
+        // 425/16
     }
 
-    @if $breakpoint ==tab-port {
+    
+    @if $breakpoint ==tablet {
 
-        // @media only screen and (max-width: 56.25em) {
-        @media (max-width: 900px) {
+        @media only screen and (max-width: 48em) {
+        // @media (max-width: 768px) {
             @content
         }
 
         ; //900px
     }
 
-    // 
-    @if $breakpoint ==tab-land {
+    
+    @if $breakpoint ==desktop {
 
-        // @media only screen and (max-width: 75em) {
-        @media (max-width: 1200px) {
+        @media only screen and (max-width: 64em) {
+        // @media (max-width: 1024px) {
             @content
         }
 
@@ -65,8 +67,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
     @if $breakpoint ==big-desktop {
 
-        // @media only screen and (min-width: 112.5em) {
-        @media (min-width: 1800px) {
+        @media only screen and (min-width: 90em) {
+        // @media (min-width: 1440px) {
             @content
         }
 
@@ -76,7 +78,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 
 @mixin respond-phone {
-    @media (max-width: 600px) {
+    @media (max-width: 425px) {
         @content
     }
 

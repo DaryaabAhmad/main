@@ -10,63 +10,58 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-    <!--    <link rel="stylesheet" href="./CSS-Codes/icon-font.css"> -->
-
     <link rel="stylesheet" href="./css/indexstyle.css">
     <link rel="shortcut icon" href="img/favicon-1.jpeg">
-
-    <!-- <meta charset="UTF-8"> -->
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
 </head>
 
 <body>
     <div>
         <!-- class="container " -->
-        <h1 id="go-to-main" class="heading">MaNgo
-            Marketplace
-        </h1>
-        <div class="heading__secondary">
-            <img class="logo" src="./img/logo.jpg" alt="">
+        <div class="header">
+            <h1 id="go-to-main" class="heading">MaNgo
+                Marketplace
+            </h1>
+            <div class="heading__secondary">
+                <img class="logo" src="./img/logo.jpg" alt="">
 
-            <form action="#" class="search">
-                <input type="text" class="search__input" placeholder="Search Engine">
-                <button class="search__button">
-                    <svg class="search__icon">
-                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                    </svg>
-                </button>
-                <!-- <p class="logo__text">Welcome to our cash and carry. You can <strong>Buy as well as order</strong> each & -->
-                <!-- evertything from here.</p> -->
-            </form>
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search Engine">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                    <!-- <p class="logo__text">Welcome to our cash and carry. You can <strong>Buy as well as order</strong> each & -->
+                    <!-- evertything from here.</p> -->
+                </form>
 
-            <!-- side nav -->
-            <nav class="user-nav">
-                <div class="user-nav__icon-box">
-                    <svg class="user-nav__icon">
-                        <use xlink:href="img/sprite.svg#icon-chat"></use>
-                    </svg>
-                    <span class="user-nav__notification">37+</span>
-                </div>
+                <!-- side nav -->
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">37+</span>
+                    </div>
 
-                <div class="user-nav__icon-box">
-                    <svg class="user-nav__icon">
-                        <use xlink:href="img/sprite.svg#icon-cart"></use>
-                    </svg>
-                    <span class="user-nav__notification">5+</span>
-                </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-cart"></use>
+                        </svg>
+                        <span class="user-nav__notification">5+</span>
+                    </div>
 
-                <div class="user-nav__user">
-                    <img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo">
-                    <span class="user-nav__user-name">Ahmad</span>
-                </div>
-
-
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Ahmad</span>
+                    </div>
 
 
-            </nav>
-            <!-- <input class="heading__search" type="text" placeholder="search" name="" id=""> -->
+
+                </nav>
+                <!-- <input class="heading__search" type="text" placeholder="search" name="" id=""> -->
+            </div>
         </div>
         <!-- sidebar -->
 
@@ -108,11 +103,11 @@
 
                 </ul>
 
-                <div class="l">
+                <!--  <div class="l">
                     <div class="l-copyright  ">
                         .Copyright &copy; 2023 by <a href="#" class="l__link">Ahmad</a> All Rights are reserverd.
                     </div>
-                </div>
+                </div> -->
             </nav>
 
             <main class="view">
@@ -122,7 +117,6 @@
                     </figure>
                 </div>
             </main>
-
         </div>
 
 
@@ -175,62 +169,74 @@
 
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
+
         </section>
 
         <!-- Login here -->
-        <section class="section-login">
-            <div class="popup popup__1 " id="login">
-                <div class="popup__content-1 ">
-                    <!-- <div class="page-view">  -->
-                    <div>
-                        <div class="home-page__form">
-                            <form action="#" class="form">
-                                <div class="  u-margin-bottom-medium  ">
-                                    <h1 class="heading-login">Login here</h1>
-                                </div>
+        <!-- <section class="section-login"> -->
+        <div class="popup popup__1 " id="login">
+            <div class="popup__content-1 ">
+                <!-- <div class="page-view">  -->
+                <div>
+                    <div class="home-page__form">
+                        <form action="#" class="form">
+                            <div class="u-margin-bottom-medium  ">
+                                <h1 class="heading-login">Login here</h1>
+                            </div>
 
-                                <div class="l-1">
-                                    <strong> First <a href="/Registration.html">Register</a> Yourself </strong>
-                                </div>
+                            
 
-                                <div class="form__group">
-                                    <input id="login-here" type="text" class="form__input" placeholder="Full Name"
-                                        required>
-                                    <label for="name" class="form__label">User Name</label>
-                                </div>
-                                <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Email address" id="email"
-                                        required>
-                                    <label for="email" class="form__label">Email address</label>
-                                </div>
-                                <div class="form__group">
-                                    <input type="password" class="form__input" placeholder="Your Password" id="password"
-                                        required>
-                                    <label for="password" class="form__label">Password</label>
-                                </div>
+                            <div class="form__group">
+                                <input id="login-here" type="text" class="form__input" placeholder="Full Name" required>
+                                <label for="name" class="form__label">User Name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="password" class="form__input" placeholder="Your Password" id="password"
+                                    required>
+                                <label for="password" class="form__label">Password</label>
+                            </div>
 
-                                <div class="form__group">
-                                    <button href="go-to-main" class="btn btn--login">Login &rarr; </button>
-                                </div>
-                                <li>
-                                    <a href="/index.html" class=" btn btn__icon  btn--login">Back to Home
-                                        <svg class="  side-nav__icon ">
-                                            <use xlink:href="img/sprite.svg#icon-home"></use>
-                                        </svg>
-                                        &rarr;
-                                    </a>
-                                </li>
+                            <div class="form__group">
+                                <button href="go-to-main" class="btn btn--login">Login &rarr; </button>
+                            </div>
+                            <li>
+                                <a href="/index.html" class=" btn btn__icon  btn--login">Back to Home
+                                    <svg class="  side-nav__icon ">
+                                        <use xlink:href="img/sprite.svg#icon-home"></use>
+                                    </svg>
+                                    &rarr;
+                                </a>
+                            </li>
+                            <div class="l-1">
+                                <strong> If you <a href="/Registration.html">Register</a> Yourself </strong>
+                            </div>
+                        </form>
 
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+
+        <!-- </section> -->
+
     </div>
+
+    <footer class="footer">
+        <div class="l">
+            <div class="l-copyright  ">
+                .Copyright &copy; 2023 by <a href="#" class="l__link">Ahmad</a> All Rights are reserverd.
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -15,7 +15,8 @@
 
     // background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93));
     // background-color: rgba($color-black, 1);
-    background-image: linear-gradient(rgba($color-primary-gradiant-1, .5), rgba($color-primary-gradiant-2, .5)), url(/img/login.jpg);
+    // background-image: linear-gradient(rgba($color-primary-gradiant-1, .5), rgba($color-primary-gradiant-2, .5)), url(/img/login.jpg);
+    background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .9));
 
     grid-column: full-start / col-end 6;
     background-size: contain;
