@@ -39,22 +39,22 @@ body {
 
     box-sizing: border-box;
     // padding: 3rem;
-    padding: 3rem;
+    padding: .5rem;
 
-    // @include respond (phone) {
-    //     padding: 3rem -3rem 3rem 3rem;
-    // }
+    @include respond (phone) {
+        padding: 0.1rem;
+    }
 
     @include respond (tablet) {
-        padding: 3rem;
+        padding: 0.1rem;
     }
 
     @include respond (desktop) {
-        padding: 3rem;
+        padding: 0.1rem;
     }
 
     @include respond (big-desktop) {
-        padding: 3rem;
+        padding: 0.1rem;
     }
 }
 

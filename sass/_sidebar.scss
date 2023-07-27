@@ -1,11 +1,23 @@
 .side-nav {
 
+    // @include respond(tablet) {
+    //     flex: 0 0 40%;
 
-    font-size: 1.4rem;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;  // 1rem=9px, // 9px\16px=56.25%
+    // }
+
+    // font-size: 1.4rem; 
+    font-size: 150%; // 14px/16px =87.5
     list-style: none;
 
     margin-top: 3.5rem;
 
+    // @include respond(tablet) {
+    //     font-size: 60%;
+
+    // }
     // @media only screen and (max-width: $bp-medium) {
     //     display: flex;
     //     margin: 0;
@@ -49,7 +61,7 @@
         text-decoration: none;
         text-transform: uppercase;
         display: block;
-        padding: 1.5rem 3rem;
+        padding: 1.5rem 0.5rem 1.5rem 3rem;
         position: relative;
         z-index: 10;
         display: flex;
@@ -74,19 +86,26 @@
     // background-repeat: no-repeat;
     height: 50rem;
     // margin-top: 10rem;
-    
+
 }
 
 .sidebar {
 
     background-color: $color-primary-light-1;
-    flex: 0 0 18%;
+    flex: 0 0 23%;
     // height: 70rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    // @include respond (big-desktop) {
-    // }
+    @include respond (tablet) {
+        flex: 0 0 30%;
+    }
+    @include respond (desktop) {
+        flex: 0 0 23%;
+    }
+    @include respond (big-desktop) {
+        flex: 0 0 18%;
+    }
 }
