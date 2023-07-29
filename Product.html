@@ -14,9 +14,9 @@
 
 </head>
 
-<body>
+<body class="container">
 
-    <section>
+    <section class="form">
         <div class="header">
             <h1 id="go-to-main" class="heading">MaNgo
                 Marketplace
@@ -69,14 +69,67 @@
         <div>
             <h1 class="page">All Products will be Shown here</h1>
         </div> -->
+<!-- Sidebar -->
+        <nav class="sidebar">
+            <ul class="side-nav">
+                <li class="side-nav__item side-nav__item--active">
+                    <a href="#login" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-user"></use>
+                        </svg>
+                        <span>Login here</span>
+                    </a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="/Registration.html" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-registration"></use>
+                        </svg>
+                        <span>Registration</span>
+                    </a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="/Product.html" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-product"></use>
+                        </svg>
+                        <span>Product Page</span>
+                    </a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#contact" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-contact"></use>
+                        </svg>
+                        <span>Contact Details</span>
+                    </a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="/index.html" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-home"></use>
+                        </svg>
+                        <span>Home Page</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <!--  <div class="l">
+                <div class="l-copyright  ">
+                    .Copyright &copy; 2023 by <a href="#" class="l__link">Ahmad</a> All Rights are reserverd.
+                </div>
+            </div> -->
+        </nav>
+        
+        <!-- Product page -->
         <div>
             <h1 class=" page page__1">Sports Products</h1>
         </div>
         <div>
             <section class="homes">
                 <div class="home">
-                    <img src="/img/adidas.jpg"
-                        alt="House 1" class="home__img">
+                    <img src="/img/adidas.jpg" alt="House 1" class="home__img">
                     <h5 class="home__name">Adidas</h5>
                     <div class="home__location">
                         <svg>
@@ -90,13 +143,12 @@
                         </svg>
                         <p>Upto $90</p>
                     </div>
-                   
+
                     <button class="btn btn__icon btn--login home__btn">Check Out</button>
                 </div>
 
                 <div class="home">
-                    <img src="/img/chanel.jpg"
-                        alt="House 2" class="home__img">
+                    <img src="/img/chanel.jpg" alt="House 2" class="home__img">
                     <h5 class="home__name">Chanel</h5>
                     <div class="home__location">
                         <svg>
@@ -110,13 +162,12 @@
                         </svg>
                         <p>Upto %80</p>
                     </div>
-                   
+
                     <button class="btn btn__icon btn--login home__btn">Check Out</button>
                 </div>
 
                 <div class="home">
-                    <img src="/img/H & M.jpg"
-                        alt="House 3" class="home__img">
+                    <img src="/img/H & M.jpg" alt="House 3" class="home__img">
                     <h5 class="home__name">H & M</h5>
                     <div class="home__location">
                         <svg>
@@ -148,7 +199,7 @@
                         </svg>
                         <p>Upto $60</p>
                     </div>
-               
+
                     <button class="btn btn__icon btn--login home__btn">Check Out</button>
                 </div>
                 <div>
@@ -173,8 +224,7 @@
 
             <section class="homes">
                 <div class="home">
-                    <img src="/img/adidas.jpg"
-                        alt="House 1" class="home__img">
+                    <img src="/img/adidas.jpg" alt="House 1" class="home__img">
                     <h5 class="home__name">Adidas</h5>
                     <div class="home__location">
                         <svg>
@@ -188,13 +238,12 @@
                         </svg>
                         <p>Upto $90</p>
                     </div>
-                   
+
                     <button class="btn btn__icon btn--login home__btn">Check Out</button>
                 </div>
 
                 <div class="home">
-                    <img src="/img/chanel.jpg"
-                        alt="House 2" class="home__img">
+                    <img src="/img/chanel.jpg" alt="House 2" class="home__img">
                     <h5 class="home__name">Chanel</h5>
                     <div class="home__location">
                         <svg>
@@ -208,13 +257,12 @@
                         </svg>
                         <p>Upto %80</p>
                     </div>
-                   
+
                     <button class="btn btn__icon btn--login home__btn">Check Out</button>
                 </div>
 
                 <div class="home">
-                    <img src="/img/H & M.jpg"
-                        alt="House 3" class="home__img">
+                    <img src="/img/H & M.jpg" alt="House 3" class="home__img">
                     <h5 class="home__name">H & M</h5>
                     <div class="home__location">
                         <svg>
@@ -246,127 +294,125 @@
                         </svg>
                         <p>Upto $60</p>
                     </div>
-               
+
                     <button class="btn btn__icon btn--login home__btn">Check Out</button>
                 </div>
-                   <li>
-                        <a href="/Garments.html" class=" btn btn__icon  btn--login">More Brands
-                            <svg class="  side-nav__icon ">
-                                <use xlink:href="img/sprite.svg#icon-brandfolder"></use>
-                            </svg>
-                            &rarr;
-                        </a>
-                    </li>
+                <li>
+                    <a href="/Garments.html" class=" btn btn__icon  btn--login">More Brands
+                        <svg class="  side-nav__icon ">
+                            <use xlink:href="img/sprite.svg#icon-brandfolder"></use>
+                        </svg>
+                        &rarr;
+                    </a>
+                </li>
+        </div>
+
+
+        <!-- Electronics section -->
+
+
+        <div>
+            <h1 class=" page page__1">Electronics Products</h1>
+        </div>
+
+        <section class="homes">
+            <div class="home">
+                <img src="/img/adidas.jpg" alt="House 1" class="home__img">
+                <h5 class="home__name">Adidas</h5>
+                <div class="home__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-compass"></use>
+                    </svg>
+                    <p>1st Floor</p>
                 </div>
-            </section>
+                <div class="home__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg>
+                    <p>Upto $90</p>
+                </div>
 
-            <!-- Electronics section -->
-
-
-            <div>
-                <h1 class=" page page__1">Electronics Products</h1>
+                <button class="btn btn__icon btn--login home__btn">Check Out</button>
             </div>
 
-            <section class="homes">
-                <div class="home">
-                    <img src="/img/adidas.jpg"
-                        alt="House 1" class="home__img">
-                    <h5 class="home__name">Adidas</h5>
-                    <div class="home__location">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#icon-compass"></use>
-                        </svg>
-                        <p>1st Floor</p>
-                    </div>
-                    <div class="home__rooms">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#icon-user"></use>
-                        </svg>
-                        <p>Upto $90</p>
-                    </div>
-                   
-                    <button class="btn btn__icon btn--login home__btn">Check Out</button>
+            <div class="home">
+                <img src="/img/chanel.jpg" alt="House 2" class="home__img">
+                <h5 class="home__name">Chanel</h5>
+                <div class="home__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-compass"></use>
+                    </svg>
+                    <p>2nd Floor</p>
+                </div>
+                <div class="home__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg>
+                    <p>Upto %80</p>
                 </div>
 
-                <div class="home">
-                    <img src="/img/chanel.jpg"
-                        alt="House 2" class="home__img">
-                    <h5 class="home__name">Chanel</h5>
-                    <div class="home__location">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#icon-compass"></use>
-                        </svg>
-                        <p>2nd Floor</p>
-                    </div>
-                    <div class="home__rooms">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#icon-user"></use>
-                        </svg>
-                        <p>Upto %80</p>
-                    </div>
-                   
-                    <button class="btn btn__icon btn--login home__btn">Check Out</button>
+                <button class="btn btn__icon btn--login home__btn">Check Out</button>
+            </div>
+
+            <div class="home">
+                <img src="/img/H & M.jpg" alt="House 3" class="home__img">
+                <h5 class="home__name">H & M</h5>
+                <div class="home__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-compass"></use>
+                    </svg>
+                    <p>3rd Floor</p>
+                </div>
+                <div class="home__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg>
+                    <p>upto $70</p>
+                </div>
+                <button class="btn btn__icon btn--login home__btn">Check Out</button>
+            </div>
+
+            <div class="home">
+                <img src="/img/nike.jpg" alt="House 4" class="home__img">
+                <h5 class="home__name">Nike</h5>
+                <div class="home__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-compass"></use>
+                    </svg>
+                    <p>4th Floor</p>
+                </div>
+                <div class="home__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg>
+                    <p>Upto $60</p>
                 </div>
 
-                <div class="home">
-                    <img src="/img/H & M.jpg"
-                        alt="House 3" class="home__img">
-                    <h5 class="home__name">H & M</h5>
-                    <div class="home__location">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#icon-compass"></use>
-                        </svg>
-                        <p>3rd Floor</p>
-                    </div>
-                    <div class="home__rooms">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#icon-user"></use>
-                        </svg>
-                        <p>upto $70</p>
-                    </div>
-                    <button class="btn btn__icon btn--login home__btn">Check Out</button>
-                </div>
+                <button class="btn btn__icon btn--login home__btn">Check Out</button>
+            </div>
+            <li>
+                <a href="/Electronics.html" class=" btn btn__icon  btn--login">More Brands
+                    <svg class="  side-nav__icon ">
+                        <use xlink:href="img/sprite.svg#icon-brandfolder"></use>
+                    </svg>
+                    &rarr;
+                </a>
+            </li>
+            </div>
+        </section>
 
-                <div class="home">
-                    <img src="/img/nike.jpg" alt="House 4" class="home__img">
-                    <h5 class="home__name">Nike</h5>
-                    <div class="home__location">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#icon-compass"></use>
-                        </svg>
-                        <p>4th Floor</p>
-                    </div>
-                    <div class="home__rooms">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#icon-user"></use>
-                        </svg>
-                        <p>Upto $60</p>
-                    </div>
-               
-                    <button class="btn btn__icon btn--login home__btn">Check Out</button>
-                </div>
-                     <li>
-                        <a href="/Electronics.html" class=" btn btn__icon  btn--login">More Brands
-                            <svg class="  side-nav__icon ">
-                                <use xlink:href="img/sprite.svg#icon-brandfolder"></use>
-                            </svg>
-                            &rarr;
-                        </a>
-                    </li>
-                </div>
-            </section>
 
 
         </div>
-        <li>
+        <!-- <li>
             <a href="/index.html" class=" btn btn__icon  btn--login">Back to Home
                 <svg class="  side-nav__icon ">
                     <use xlink:href="img/sprite.svg#icon-home"></use>
                 </svg>
                 &rarr;
             </a>
-        </li>
-        
+        </li> -->
+
     </section>
     <footer class="footer">
         <div class="l">

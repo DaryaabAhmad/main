@@ -9,7 +9,7 @@
 
     &-1 {
         font-size: 1.7rem;
-        color: $color-black;
+        color: $color-text;
         text-align: left;
         padding: .5rem 1rem;
 
@@ -41,7 +41,7 @@
         &:link,
         &:visited {
             color: $color-black;
-            background-color: $color-primary-light-1;
+            background-color: $color-primary;
             text-decoration: none;
             text-transform: uppercase;
             display: inline-block;

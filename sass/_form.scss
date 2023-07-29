@@ -1,5 +1,5 @@
 .form {
-    background-color: rgba(255, 255, 255, 0.781);
+    background-color: $color-form;
     padding: 3rem;
     transition: all .2s;
 
@@ -93,7 +93,7 @@
         position: relative;
         // padding-left: 2.5rem;
         padding: 0 2.5rem;
-        color: $color-black;
+        color: $color-text;
         margin-bottom: 1rem;
 
         // display: flex;
@@ -103,7 +103,7 @@
     &__radio-button {
         height: 1.7rem;
         width: 1.7rem;
-        border: .3rem solid $color-primary;
+        border: .3rem solid $color-white;
         border-radius: 50%;
         display: inline-block;
         position: absolute;
@@ -121,7 +121,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: $color-primary;
+            background-color: $color-white;
             opacity: 0;
             transition: opacity .2s;
         }

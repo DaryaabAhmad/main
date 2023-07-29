@@ -14,6 +14,11 @@
 
     margin-top: 3.5rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        margin: 0;
+    }
+
     // @include respond(tablet) {
     //     font-size: 60%;
 
@@ -29,6 +34,8 @@
             margin-bottom: 0.5rem;
 
         }
+
+
     }
 
     &__item::before {
@@ -57,7 +64,7 @@
 
     &__link:link,
     &__link:visited {
-        color: $color-black;
+        color: $color-text;
         text-decoration: none;
         text-transform: uppercase;
         display: block;
@@ -85,13 +92,16 @@
     // background-color: red;
     // background-repeat: no-repeat;
     height: 50rem;
-    // margin-top: 10rem;
 
+    // margin-top: 10rem;
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
 }
 
 .sidebar {
 
-    background-color: $color-primary-light-1;
+    background-color: $color-primary;
     flex: 0 0 23%;
     // height: 70rem;
 
@@ -102,10 +112,13 @@
     @include respond (tablet) {
         flex: 0 0 30%;
     }
+
     @include respond (desktop) {
         flex: 0 0 23%;
     }
+
     @include respond (big-desktop) {
         flex: 0 0 18%;
     }
+
 }

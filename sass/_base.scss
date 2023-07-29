@@ -10,7 +10,10 @@ html {
     // this define what 1 rem is
     font-size: 62.5%; // 1rem = 10px , 10px\16px = 62.5%
 
-    @include respond(tablet) {
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+   /*  @include respond(tablet) {
         font-size: 56.25%; // 1rem=9px, // 9px\16px=56.25%
     }
 
@@ -19,6 +22,9 @@ html {
         font-size: 50%;
         //1 rem = 8px, 8/16 = 50%
     }
+    // @media only screen and (max-width: $bp-large) {
+    //     font-size: 50%;
+    // }
 
 
     // @include respond(phone) {
@@ -30,7 +36,7 @@ html {
     @include respond(big-desktop) {
         font-size: 75%;
         //1rem = 12, 12/16px = 75%
-    }
+    }*/
 
 
 }
